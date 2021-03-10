@@ -12,7 +12,7 @@ function ReadDataFromFile($filename)
 
 function SaveDataToFile($filename, $data)
 {
-    $file = fopen("$dataPath$filename", "wr");
+    $file = fopen("$dataPath$filename", "w");
     fwrite($file, $data['firstname']);
     fwrite($file, $data['lastname']);
     fwrite($file, $data['age']);
